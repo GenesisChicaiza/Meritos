@@ -1,10 +1,17 @@
 package aplicacion;
 import dominio.Articulo;
 import dominio.Proyecto;
+import presentacion.Interfaz;
 import dominio.Catedratico;
 import dominio.ProfesorTitular;
 
-public class Principal{public static void main(String[] args) 
+public class Principal
+{
+    public static void main(String[] args){
+        Interfaz iu = new Interfaz();
+        iu.ejecutar();
+    }
+    public static void main2(String[] args) 
     {//El primer parámetro del constructor es el título y, el
         //segundo, el índice de impacto.
         Articulo articulo1 = new Articulo("El gran invento",1.367);
